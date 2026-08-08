@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+.dark html {
+  background-color: #09090b !important;
+}
+
+body {
+  background-color: #fafafa;
+  color: #18181b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* --- DARK MODE GLOBAL FIX --- */
+.dark body {
+  background-color: #09090b !important;
+  color: #f4f4f5 !important;
+}
+
+/* Memastikan seluruh section, footer, dan header ikut gelap total */
+.dark section,
+.dark footer,
+.dark header,
+.dark nav {
+  background-color: #09090b !important;
+  color: #f4f4f5 !important;
+}
+
+/* Memperjelas semua teks dan paragraf redup agar sangat kontras dibaca */
+.dark p, 
+.dark span, 
+.dark li, 
+.dark label {
+  color: #d4d4d8 !important;
+}
+
+.dark h1, 
+.dark h2, 
+.dark h3, 
+.dark h4 {
+  color: #ffffff !important;
+}
+
+/* Memperbaiki badge/pill hijau muda agar kontras dan terbaca jelas */
+.dark .bg-green-100,
+.dark .bg-emerald-100 {
+  background-color: #064e3b !important;
+  color: #34d399 !important;
+  border-color: #047857 !important;
+}
+
+/* Memperbaiki kartu/card putih agar berubah gelap dengan sempurna */
+.dark .bg-white,
+.dark .bg-zinc-50 {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+  border-color: #27272a !important;
+}
+
+.dark input, 
+.dark select, 
+.dark textarea {
+  background-color: #27272a !important;
+  color: #ffffff !important;
+  border-color: #3f3f46 !important;
+}
+
+.dark input::placeholder {
+  color: #a1a1aa !important;
+}
+
+/* Animasi Scroll yang Bersih (Tanpa kilatan putih) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
