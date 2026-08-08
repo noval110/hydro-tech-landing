@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import HarvestCalculator from './components/HarvestCalculator';
-import InteractiveFeatures from './components/InteractiveFeatures';
-import Testimonials from './components/Testimonials';
-import Gallery from './components/Gallery';
-import LiveSensor from './components/LiveSensor';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './components_new/Navbar';
+import Hero from './components_new/hero';
+import Features from './components_new/features';
+import HarvestCalculator from './components_new/HarvestCalculator';
+import InteractiveFeatures from './components_new/InteractiveFeatures';
+import Testimonials from './components_new/testimonials';
+import Gallery from './components_new/gallery';
+import LiveSensor from './components_new/LiveSensor';
+import Contact from './components_new/contact';
+import Footer from './components_new/footer';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
