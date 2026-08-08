@@ -45,12 +45,10 @@ export default function Gallery({ darkMode }) {
   return (
     <section id="gallery" className={`py-24 relative overflow-hidden transition-colors duration-300 ${darkMode ? 'bg-zinc-950 text-white' : 'bg-white text-zinc-900'}`}>
       
-      {/* Efek Cahaya Hijau Abstrak (Ambient Glow) di Latar Belakang */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-500/10 dark:bg-green-500/10 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-950/80 text-green-700 dark:text-green-300 text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-green-200 dark:border-green-800">
             Portofolio Nyata
@@ -80,7 +78,6 @@ export default function Gallery({ darkMode }) {
           </div>
         </div>
 
-        {/* Grid Kartu Galeri dengan Animasi Masuk (Keyframe / Transition) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map((item) => (
             <div 
@@ -88,8 +85,7 @@ export default function Gallery({ darkMode }) {
               className="bg-white dark:bg-zinc-900 rounded-3xl p-6 border border-zinc-100 dark:border-zinc-800 shadow-[0_15px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_0_35px_rgba(34,197,94,0.35)] hover:shadow-[0_0_55px_rgba(34,197,94,0.6)] hover:border-green-500 transition-all duration-500 transform hover:-translate-y-2 group flex flex-col justify-between animate-fadeIn"
             >
               <div>
-                {/* Area Foto Dokumentasi */}
-                <div className="w-full h-56 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950 mb-6 border border-zinc-200 dark:border-zinc-800 relative">
+              <div className="w-full h-56 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-950 mb-6 border border-zinc-200 dark:border-zinc-800 relative">
                   <img 
                     src={item.image} 
                     alt={item.title} 

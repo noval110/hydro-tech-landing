@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 export default function LiveSensor({ darkMode }) {
-  // Simulasi data sensor yang naik-turun secara real-time biar kelihatan hidup
   const [sensorData, setSensorData] = useState({
     ppm: 1240,
     ph: 6.2,
@@ -25,7 +24,6 @@ export default function LiveSensor({ darkMode }) {
     <section className={`py-16 relative overflow-hidden transition-colors duration-300 ${darkMode ? 'bg-zinc-950 text-white border-t border-zinc-900' : 'bg-white text-zinc-900 border-t border-zinc-100'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header Widget */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
@@ -44,7 +42,6 @@ export default function LiveSensor({ darkMode }) {
         {/* Grid Parameter Sensor */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           
-          {/* PPM */}
           <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Nutrisi (TDS)</p>
             <div className="flex items-baseline gap-2">
@@ -56,7 +53,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* pH Air */}
           <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Keasaman Air (pH)</p>
             <div className="flex items-baseline gap-2">
@@ -68,7 +64,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* Suhu Air/Ruangan */}
           <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Suhu Lingkungan</p>
             <div className="flex items-baseline gap-2">
@@ -80,7 +75,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* Kelembaban */}
           <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Kelembaban Udara</p>
             <div className="flex items-baseline gap-2">

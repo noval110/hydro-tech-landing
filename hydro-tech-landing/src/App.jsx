@@ -99,7 +99,6 @@ export default function App() {
         <Gallery darkMode={darkMode} />
       </div>
 
-      {/* Live Sensor IoT Real-Time */}
       <div className="reveal">
         <LiveSensor darkMode={darkMode} />
       </div>

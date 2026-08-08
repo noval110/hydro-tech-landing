@@ -25,7 +25,6 @@ export default function Features({ darkMode }) {
     }
   ];
 
-  // Fungsi untuk melacak posisi kursor mouse pada kartu
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -61,7 +60,6 @@ export default function Features({ darkMode }) {
                   : 'bg-zinc-50 border-zinc-200 hover:border-green-500 hover:shadow-xl'
               }`}
             >
-              {/* Efek Cahaya Spotlight yang Mengikuti Kursor */}
               <div 
                 className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
@@ -69,7 +67,6 @@ export default function Features({ darkMode }) {
                 }}
               />
 
-              {/* Wadah Ikon */}
               <div className="relative z-10 w-12 h-12 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                 {item.icon}
               </div>

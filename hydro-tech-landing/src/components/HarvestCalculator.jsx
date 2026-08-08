@@ -39,9 +39,7 @@ export default function HarvestCalculator({ darkMode }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* KOLOM KIRI: SIKLUS HIDUP 
-              Shadow Hijau diterapkan di kedua mode (Light mode lebih tebal opacity 30%) 
-          */}
+       
           <div className={`rounded-3xl p-8 border flex flex-col justify-between transition-all duration-300 ${
             darkMode 
               ? 'bg-zinc-900 border-zinc-800 shadow-[0_20px_50px_rgba(34,197,94,0.15)]' 
@@ -96,9 +94,7 @@ export default function HarvestCalculator({ darkMode }) {
             </div>
           </div>
 
-          {/* KOLOM KANAN: KALKULATOR 
-              Shadow Hijau diterapkan di kedua mode (Light mode lebih tebal opacity 30%) 
-          */}
+          
           <div className={`rounded-3xl p-8 border transition-all duration-300 ${
             darkMode 
               ? 'bg-zinc-900 border-zinc-800 shadow-[0_20px_50px_rgba(34,197,94,0.15)]' 

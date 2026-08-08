@@ -77,7 +77,6 @@ export default function InteractiveFeatures({ darkMode }) {
             </p>
           </div>
 
-          {/* Diperbesar padding-nya jadi p-10 dan gap-8 agar tidak dempet */}
           <div className={`rounded-3xl p-8 sm:p-10 border transition-all duration-300 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center ${
             darkMode 
               ? 'bg-zinc-900 border-zinc-800 shadow-[0_20px_50px_rgba(34,197,94,0.2)]' 
@@ -108,7 +107,6 @@ export default function InteractiveFeatures({ darkMode }) {
 
             <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
               
-              {/* Tombol Pompa Air */}
               <div className={`p-6 rounded-2xl border-2 transition-all duration-300 ${pumpActive ? 'border-green-500 bg-green-500/10 shadow-lg' : darkMode ? 'border-zinc-800 bg-zinc-950' : 'border-zinc-200 bg-white'}`}>
                 <div className="flex justify-between items-start mb-4">
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${pumpActive ? 'bg-green-600 text-white shadow-md' : darkMode ? 'bg-zinc-800 text-zinc-400' : 'bg-zinc-100 text-zinc-600'}`}>
@@ -127,7 +125,6 @@ export default function InteractiveFeatures({ darkMode }) {
                 </p>
               </div>
 
-              {/* Tombol Lampu LED */}
               <div className={`p-6 rounded-2xl border-2 transition-all duration-300 ${growLight ? 'border-green-500 bg-green-500/10 shadow-lg' : darkMode ? 'border-zinc-800 bg-zinc-950' : 'border-zinc-200 bg-white'}`}>
                 <div className="flex justify-between items-start mb-4">
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${growLight ? 'bg-green-600 text-white shadow-md' : darkMode ? 'bg-zinc-800 text-zinc-400' : 'bg-zinc-100 text-zinc-600'}`}>

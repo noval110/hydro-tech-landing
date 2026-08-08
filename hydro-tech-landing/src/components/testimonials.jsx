@@ -40,7 +40,7 @@ export default function Testimonials({ darkMode }) {
             <div 
               key={index} 
               className="reveal bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-green-300 transition-all duration-300 group"
-              style={{ transitionDelay: `${index * 150}ms` }} /* Efek muncul bergantian */
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(review.rating)].map((_, i) => (

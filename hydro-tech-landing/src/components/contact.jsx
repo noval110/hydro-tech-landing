@@ -28,7 +28,6 @@ export default function Contact({ darkMode }) {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          {/* Kolom Kiri: Info & Pilihan Modul */}
           <div className="space-y-8 reveal bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-[0_20px_60px_rgba(34,197,94,0.3)] dark:shadow-[0_20px_50px_rgba(34,197,94,0.15)] border border-zinc-100 dark:border-zinc-800">
             <div>
               <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-950/80 text-green-700 dark:text-green-300 text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-green-200 dark:border-green-800">
@@ -95,7 +94,6 @@ export default function Contact({ darkMode }) {
             </div>
           </div>
 
-          {/* Kolom Kanan: Form Jadwal Konsultasi */}
           <div className="bg-white dark:bg-zinc-900 rounded-3xl p-8 shadow-[0_20px_60px_rgba(34,197,94,0.3)] dark:shadow-[0_20px_50px_rgba(34,197,94,0.15)] border border-zinc-100 dark:border-zinc-800 reveal transition-colors duration-300" style={{ transitionDelay: '200ms' }}>
             <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-6">Jadwalkan Konsultasi</h3>
             
@@ -133,7 +131,6 @@ export default function Contact({ darkMode }) {
         </div>
       </div>
 
-      {/* MODAL */}
       {showModal && createPortal(
         <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
           <div 
