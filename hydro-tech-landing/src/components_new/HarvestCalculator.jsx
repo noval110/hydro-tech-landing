@@ -26,9 +26,6 @@ export default function HarvestCalculator({ darkMode }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-bold uppercase tracking-wider mb-4 ${darkMode ? 'bg-green-950/80 border-green-800/50 text-green-400' : 'bg-green-50 border-green-200 text-green-700'}`}>
-            Fitur Cerdas
-          </div>
           <h2 className={`text-3xl font-extrabold tracking-tight mb-4 ${darkMode ? 'text-white' : 'text-zinc-900'}`}>
             Hitung Potensi & <span className="text-green-600">Fase Panen</span> Anda
           </h2>

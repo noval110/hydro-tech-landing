@@ -66,9 +66,6 @@ export default function InteractiveFeatures({ darkMode }) {
         {/* --- LIVE IoT SIMULATOR --- */}
         <div className="reveal">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-950/80 text-green-700 dark:text-green-300 text-xs font-bold uppercase tracking-wider border border-green-200 dark:border-green-800">
-              Live Demo Interaktif
-            </span>
             <h2 className="text-3xl font-extrabold tracking-tight mt-3 mb-3">
               Uji Coba Kendali <span className="text-green-600">Smart IoT Node</span>
             </h2>
@@ -152,9 +149,6 @@ export default function InteractiveFeatures({ darkMode }) {
         {/* --- PUSAT INFORMASI (FAQ) --- */}
         <div className="reveal">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider">
-              Pusat Informasi Lengkap
-            </span>
             <h2 className="text-3xl font-extrabold tracking-tight mt-3 mb-3">
               Pertanyaan yang Sering <span className="text-green-600">Diajukan</span>
             </h2>

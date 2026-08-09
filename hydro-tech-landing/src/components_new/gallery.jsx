@@ -50,9 +50,6 @@ export default function Gallery({ darkMode }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-950/80 text-green-700 dark:text-green-300 text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-green-200 dark:border-green-800">
-            Portofolio Nyata
-          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
             Galeri Instalasi AgriSmart
           </h2>

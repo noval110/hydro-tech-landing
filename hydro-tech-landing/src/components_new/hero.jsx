@@ -12,11 +12,6 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="space-y-8 text-left">
-            
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-100 dark:bg-green-950/60 border border-green-300 dark:border-green-800 text-green-800 dark:text-green-300 text-xs font-bold">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-              Sistem Hidroponik Pintar
-            </div>
 
             <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
               Rawat tanaman Anda tanpa <span className="text-green-600 dark:text-green-500">kerumitan ekstra</span>
@@ -43,7 +38,7 @@ export default function Hero() {
 
             <div className="inline-flex flex-wrap items-center gap-6 p-4 rounded-2xl bg-white/90 dark:bg-zinc-900/90 border border-zinc-300 dark:border-zinc-800 shadow-sm">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-green-500 animate-ping"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500 "></div>
                 <div>
                   <div className="text-xs font-bold text-zinc-900 dark:text-white">Status Sistem: Normal</div>
                   <div className="text-[11px] text-zinc-500">Pembaruan terakhir: Baru saja</div>

@@ -27,16 +27,9 @@ export default function LiveSensor({ darkMode }) {
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-ping"></span>
-              <span className="text-xs font-mono font-bold tracking-widest text-green-600 dark:text-green-400 uppercase">
-                Live IoT Telemetry Node 
-              </span>
             </div>
             <h3 className="text-2xl font-extrabold tracking-tight">Status Sensor Real-Time</h3>
           </div>
-          <span className="text-xs font-mono px-3 py-1 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20">
-            Status: Terhubung ke ESP32 Gateway
-          </span>
         </div>
 
         {/* Grid Parameter Sensor */}

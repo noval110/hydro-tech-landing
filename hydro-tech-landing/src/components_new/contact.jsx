@@ -30,9 +30,6 @@ export default function Contact({ darkMode }) {
           
           <div className="space-y-8 reveal bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-[0_20px_60px_rgba(34,197,94,0.3)] dark:shadow-[0_20px_50px_rgba(34,197,94,0.15)] border border-zinc-100 dark:border-zinc-800">
             <div>
-              <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-950/80 text-green-700 dark:text-green-300 text-xs font-bold uppercase tracking-wider mb-4 inline-block border border-green-200 dark:border-green-800">
-                Pesan Modul
-              </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-900 dark:text-white tracking-tight mb-4">
                 Mulai kebun pintar Anda hari ini
               </h2>
