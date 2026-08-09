@@ -57,7 +57,7 @@ export default function Gallery({ darkMode }) {
             Galeri Instalasi AgriSmart
           </h2>
           <p className="text-zinc-500 dark:text-zinc-400 text-base leading-relaxed">
-            Berikut adalah dokumentasi asli hasil pemasangan sistem hidroponik cerdas di lokasi klien.
+            Berikut adalah dokumentasi asli hasil pemasangan sistem hidroponik cerdas di lokasi klien
           </p>
 
           {/* Filter Tabs */}

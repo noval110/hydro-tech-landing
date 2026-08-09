@@ -11,19 +11,19 @@ export default function InteractiveFeatures({ darkMode }) {
       id: 1,
       category: "Perawatan",
       question: "Bagaimana sistem perawatan dari hidroponik AgriSmart?",
-      answer: "Perawatan sangat mudah dan otomatis: sistem memantau level air di tangki, menjaga takaran nutrisi PPM, serta memutar sirkulasi air 24/7 tanpa perlu pengawasan manual terus-menerus."
+      answer: "Perawatan sangat mudah dan otomatis: sistem memantau level air di tangki, menjaga takaran nutrisi PPM, serta memutar sirkulasi air 24/7 tanpa perlu pengawasan manual terus-menerus"
     },
     {
       id: 2,
       category: "Nutrisi",
       question: "Berapa takaran PPM ideal untuk tanaman selada dan pakcoy?",
-      answer: "Untuk hasil optimal pada sistem hidroponik AgriSmart, pastikan nutrisi PPM dijaga di kisaran 1000 - 1200 dengan tingkat keasaman (pH) air antara 6.0 hingga 6.5."
+      answer: "Untuk hasil optimal pada sistem hidroponik AgriSmart, pastikan nutrisi PPM dijaga di kisaran 1000 - 1200 dengan tingkat keasaman (pH) air antara 6.0 hingga 6.5"
     },
     {
       id: 3,
       category: "Panen",
       question: "Berapa lama rata-rata masa panen sayuran?",
-      answer: "Rata-rata masa panen menggunakan modul kami berkisar antara 21 hingga 35 hari, tergantung pada jenis tanaman yang Anda pilih (seperti kangkung, pakcoy, atau selada)."
+      answer: "Rata-rata masa panen menggunakan modul kami berkisar antara 21 hingga 35 hari, tergantung pada jenis tanaman yang Anda pilih (seperti kangkung, pakcoy, atau selada)"
     },
     {
       id: 4,
@@ -35,25 +35,25 @@ export default function InteractiveFeatures({ darkMode }) {
       id: 5,
       category: "Instalasi",
       question: "Apakah sulit merakit modul AgriSmart di rumah?",
-      answer: "Sangat mudah! Modul dikirimkan dalam bentuk sistem modular siap pasang (knock-down) yang dapat dirakit sendiri dalam waktu kurang dari 30 menit tanpa alat khusus."
+      answer: "Sangat mudah! Modul dikirimkan dalam bentuk sistem modular siap pasang (knock-down) yang dapat dirakit sendiri dalam waktu kurang dari 30 menit tanpa alat khusus"
     },
     {
       id: 6,
       category: "Listrik",
       question: "Berapa besar daya listrik yang dikonsumsi sistem ini?",
-      answer: "Sangat hemat energi. Pompa sirkulasi pintar dan sensor IoT kami hanya memakan daya sekitar 15 Watt secara total (lebih hemat dari lampu rumah biasa)."
+      answer: "Sangat hemat energi. Pompa sirkulasi pintar dan sensor IoT kami hanya memakan daya sekitar 15 Watt secara total (lebih hemat dari lampu rumah biasa)"
     },
     {
       id: 7,
       category: "Garansi",
       question: "Apakah ada garansi untuk komponen IoT dan pompa?",
-      answer: "Ya, setiap pembelian modul AgriSmart dilengkapi garansi resmi selama 1 tahun untuk seluruh komponen elektronik, sensor, dan pompa air."
+      answer: "Ya, setiap pembelian modul AgriSmart dilengkapi garansi resmi selama 1 tahun untuk seluruh komponen elektronik, sensor, dan pompa air"
     },
     {
       id: 8,
       category: "Aplikasi",
       question: "Apakah sistem ini wajib dihubungkan ke smartphone?",
-      answer: "Tidak wajib. Sistem dapat berjalan secara otomatis penuh tanpa smartphone. Namun, menghubungkannya ke aplikasi memberi Anda kemudahan memantau status secara jarak jauh."
+      answer: "Tidak wajib. Sistem dapat berjalan secara otomatis penuh tanpa smartphone. Namun, menghubungkannya ke aplikasi memberi Anda kemudahan memantau status secara jarak jauh"
     }
   ];
 
@@ -73,7 +73,7 @@ export default function InteractiveFeatures({ darkMode }) {
               Uji Coba Kendali <span className="text-green-600">Smart IoT Node</span>
             </h2>
             <p className={`text-sm sm:text-base ${darkMode ? 'text-zinc-400' : 'text-zinc-500'}`}>
-              Klik tombol di bawah untuk melihat perubahan status perangkat keras secara real-time.
+              Klik tombol di bawah untuk melihat perubahan status perangkat keras secara real-time
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function InteractiveFeatures({ darkMode }) {
                 </div>
               </div>
               <div className="pt-2 text-xs text-zinc-400 leading-relaxed">
-                *Indikator menyala hijau saat perangkat diaktifkan.
+                *Indikator menyala hijau saat perangkat diaktifkan
               </div>
             </div>
 
@@ -159,7 +159,7 @@ export default function InteractiveFeatures({ darkMode }) {
               Pertanyaan yang Sering <span className="text-green-600">Diajukan</span>
             </h2>
             <p className={`text-sm sm:text-base ${darkMode ? 'text-zinc-400' : 'text-zinc-500'}`}>
-              Pilih berbagai topik di bawah ini untuk mengetahui detail spesifikasi sistem AgriSmart.
+              Pilih berbagai topik di bawah ini untuk mengetahui detail spesifikasi sistem AgriSmart
             </p>
           </div>
 

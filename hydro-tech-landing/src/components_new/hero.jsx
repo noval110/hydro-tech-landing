@@ -29,7 +29,7 @@ export default function Hero({ darkMode }) {
           <a href="#simulasi" className="px-8 py-4 rounded-2xl font-extrabold bg-green-600 hover:bg-green-700 text-white shadow-[0_10px_30px_rgba(34,197,94,0.4)] hover:shadow-[0_15px_35px_rgba(34,197,94,0.6)] transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer inline-flex items-center justify-center">
             Mulai Simulasi Panen
           </a>
-          <a href="#teknologi" className="px-6 py-3.5 rounded-2xl font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white shadow-[0_0_25px_rgba(34,197,94,0.35)] hover:border-green-500 transition-all cursor-pointer inline-flex items-center justify-center">
+          <a id='teknologi' href="#teknologi" className="px-6 py-3.5 rounded-2xl font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white shadow-[0_0_25px_rgba(34,197,94,0.35)] hover:border-green-500 transition-all cursor-pointer inline-flex items-center justify-center">
             Cara Kerja
           </a>
         </div>

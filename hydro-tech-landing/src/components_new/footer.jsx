@@ -11,11 +11,11 @@ export default function Footer({ darkMode }) {
           <div className="w-8 h-8 rounded-lg bg-green-500 flex items-center justify-center font-bold text-white shadow-md">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
           </div>
-          <span className={`font-extrabold tracking-tight ${darkMode ? 'text-white' : 'text-zinc-900'}`}>AgriSmart.</span>
+          <span className={`font-extrabold tracking-tight ${darkMode ? 'text-white' : 'text-zinc-900'}`}>AgriSmart</span>
         </div>
 
         <p className="text-xs text-zinc-400 text-center sm:text-left">
-          &copy; 2026 AgriSmart Indonesia. Dibangun untuk IT FEST 2026.
+          &copy; 2026 AgriSmart Indonesia. Dibangun untuk IT FEST 2026
         </p>
 
         <div className="flex gap-6 text-xs font-medium">

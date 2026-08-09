@@ -34,10 +34,10 @@ export default function Contact({ darkMode }) {
                 Pesan Modul
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-900 dark:text-white tracking-tight mb-4">
-                Mulai kebun pintar Anda hari ini.
+                Mulai kebun pintar Anda hari ini
               </h2>
               <p className="text-zinc-500 dark:text-zinc-400 text-base leading-relaxed">
-                Pilih modul yang paling sesuai dengan kebutuhan ruang Anda. Tim ahli kami siap membantu instalasi penuh di lokasi Anda.
+                Pilih modul yang paling sesuai dengan kebutuhan ruang Anda. Tim ahli kami siap membantu instalasi penuh di lokasi Anda
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function Contact({ darkMode }) {
                       </span>
                       <div>
                         <h4 className="font-bold text-zinc-900 dark:text-white text-sm">Starter Kit (Vertical)</h4>
-                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Kapasitas 36 lubang tanam. Cocok untuk balkon apartemen.</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Kapasitas 36 lubang tanam. Cocok untuk balkon apartemen</p>
                       </div>
                     </div>
                     <span className="font-extrabold text-green-600 dark:text-green-400 text-sm">Rp 2 Jt</span>
@@ -84,7 +84,7 @@ export default function Contact({ darkMode }) {
                       </span>
                       <div>
                         <h4 className="font-bold text-zinc-900 dark:text-white text-sm">Pro System (Horizontal)</h4>
-                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Kapasitas 120 lubang tanam dengan dual sensor IoT.</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Kapasitas 120 lubang tanam dengan dual sensor IoT</p>
                       </div>
                     </div>
                     <span className="font-extrabold text-green-600 dark:text-green-400 text-sm">Rp 5.8 Jt</span>
@@ -123,7 +123,7 @@ export default function Contact({ darkMode }) {
                 Kirim Pesan
               </button>
               <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">
-                Kami akan membalas dalam waktu maksimal 24 jam.
+                Kami akan membalas dalam waktu maksimal 24 jam
               </p>
             </form>
           </div>
@@ -153,7 +153,7 @@ export default function Contact({ darkMode }) {
             
             <h3 className="text-2xl font-extrabold text-zinc-900 dark:text-white mb-2">Berhasil Terkirim!</h3>
             <p className="text-zinc-500 dark:text-zinc-400 mb-8 leading-relaxed">
-              Permintaan konsultasi untuk paket <span className="font-bold text-green-600 dark:text-green-400">{selectedPackage}</span> telah kami terima. Tim ahli kami akan segera menghubungi Anda.
+              Permintaan konsultasi untuk paket <span className="font-bold text-green-600 dark:text-green-400">{selectedPackage}</span> telah kami terima. Tim ahli kami akan segera menghubungi Anda
             </p>
             
             <button 
