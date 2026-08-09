@@ -16,10 +16,8 @@ export default function App() {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
-      document.body.style.backgroundColor = '#09090b';
     } else {
       document.documentElement.classList.remove('dark');
-      document.body.style.backgroundColor = '#fafafa';
     }
   }, [darkMode]);
 
@@ -42,23 +40,23 @@ export default function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen overflow-x-hidden transition-colors duration-500 ${darkMode ? 'bg-[#09090b] text-zinc-100' : 'bg-[#fafafa] text-zinc-900'}`}>
+    <div className={`min-h-screen overflow-x-hidden transition-colors duration-500 site-grid-bg ${darkMode ? 'dark text-zinc-100' : 'text-zinc-900'}`}>
       
       <style>{`
-        html.dark, html.dark body {
-          background-color: #09090b !important;
+        .site-grid-bg {
+          background-color: #fafafa;
+          background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+          background-size: 36px 36px;
         }
-        
-        html.dark body::before {
-          content: "";
-          position: absolute;
-          top: 0; left: 0; right: 0; height: 1000px;
-          background-image: linear-gradient(to right, rgba(39, 39, 42, 0.15) 1px, transparent 1px),
-                            linear-gradient(to bottom, rgba(39, 39, 42, 0.15) 1px, transparent 1px);
-          background-size: 40px 40px;
-          mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
-          pointer-events: none;
-          z-index: 0;
+
+        .dark .site-grid-bg {
+          background-color: #09090b !important;
+          background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px) !important;
+          background-size: 36px 36px;
         }
 
         .ambient-glow {
