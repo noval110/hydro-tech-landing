@@ -12,12 +12,17 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="space-y-8 text-left">
+            
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-100 dark:bg-green-950/60 border border-green-300 dark:border-green-800 text-green-800 dark:text-green-300 text-xs font-bold">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              Sistem Hidroponik Pintar
+            </div>
 
             <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
               Rawat tanaman Anda tanpa <span className="text-green-600 dark:text-green-500">kerumitan ekstra</span>
             </h1>
 
-            <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed max-w-lg font-medium">
+            <p className="text-lg text-zinc-800 dark:text-zinc-300 leading-relaxed max-w-lg font-medium">
               Modul hidroponik berbasis IoT yang otomatis memantau pH air, mengatur sirkulasi nutrisi, dan mengirim laporan langsung ke ponsel Anda. Dirancang khusus untuk ruang terbatas.
             </p>
 
@@ -38,7 +43,7 @@ export default function Hero() {
 
             <div className="inline-flex flex-wrap items-center gap-6 p-4 rounded-2xl bg-white/90 dark:bg-zinc-900/90 border border-zinc-300 dark:border-zinc-800 shadow-sm">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-green-500 "></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 <div>
                   <div className="text-xs font-bold text-zinc-900 dark:text-white">Status Sistem: Normal</div>
                   <div className="text-[11px] text-zinc-500">Pembaruan terakhir: Baru saja</div>
@@ -47,11 +52,11 @@ export default function Hero() {
               <div className="hidden sm:block h-8 w-px bg-zinc-300 dark:bg-zinc-800"></div>
               <div className="flex items-center gap-6 text-xs font-semibold">
                 <div>
-                  <span className="block text-zinc-500 font-normal text-[10px]">KADAR NUTRISI</span>
+                  <span className="block text-zinc-600 font-normal text-[10px]">KADAR NUTRISI</span>
                   <span className="text-zinc-900 dark:text-white">1050 <span className="text-zinc-500 font-normal">PPM</span></span>
                 </div>
                 <div>
-                  <span className="block text-zinc-500 font-normal text-[10px]">PH AIR</span>
+                  <span className="block text-zinc-600 font-normal text-[10px]">PH AIR</span>
                   <span className="text-zinc-900 dark:text-white">6.2 <span className="text-zinc-500 font-normal">pH</span></span>
                 </div>
               </div>
