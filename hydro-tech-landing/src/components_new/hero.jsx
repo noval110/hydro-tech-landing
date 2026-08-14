@@ -13,7 +13,7 @@ export default function Hero() {
           
           <div className="space-y-8 text-left">
 
-            <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
+            <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 leading-[1.1]">
               Rawat tanaman Anda tanpa <span className="text-green-600 dark:text-green-500">kerumitan ekstra</span>
             </h1>
 
