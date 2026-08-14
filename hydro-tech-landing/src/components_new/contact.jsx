@@ -101,7 +101,7 @@ export default function Contact({ darkMode }) {
                   type="text" 
                   required 
                   className="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-zinc-900 dark:text-white focus:outline-none focus:border-green-500 focus:ring-2 focus:ring-green-500/20 transition-all shadow-sm" 
-                  placeholder="John Doe" 
+                  placeholder="Someone" 
                 />
               </div>
               <div>
