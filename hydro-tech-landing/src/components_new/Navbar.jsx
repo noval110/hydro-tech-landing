@@ -151,6 +151,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           {/* MOBILE */}
           <div className="md:hidden flex items-center gap-2">
 
+            {/* DARK MODE MOBILE */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-yellow-400 cursor-pointer"
@@ -187,9 +188,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
               )}
             </button>
 
+            {/* HAMBURGER */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 cursor-pointer"
+              className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white cursor-pointer"
               type="button"
             >
               <svg
@@ -222,24 +224,41 @@ export default function Navbar({ darkMode, setDarkMode }) {
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full px-4 pt-2 pb-6 transition-all animate-fadeIn">
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 shadow-2xl space-y-2">
+          
+          <div
+            className={`rounded-3xl p-4 shadow-2xl space-y-2 border transition-colors duration-300 ${
+              darkMode
+                ? 'bg-zinc-900 border-zinc-800'
+                : 'bg-white border-zinc-200'
+            }`}
+          >
 
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={(e) => scrollTo(e, link.id)}
-                className="flex items-center justify-between py-3 px-4 rounded-2xl font-semibold hover:bg-green-50 dark:hover:bg-green-950/40 hover:text-green-600 transition-all"
-                style={{
-                  color: darkMode ? '#e4e4e7' : '#3f3f46',
-                }}
+                className={`flex items-center justify-between py-3 px-4 rounded-2xl font-semibold hover:bg-green-50 dark:hover:bg-green-950/40 hover:text-green-600 transition-all ${
+                  darkMode
+                    ? 'text-white'
+                    : 'text-zinc-900'
+                }`}
               >
-                {link.name}
-                <span className="text-green-500 font-normal">→</span>
+                <span>{link.name}</span>
+
+                <span className="text-green-500 font-normal">
+                  →
+                </span>
               </a>
             ))}
 
-            <div className="pt-3 mt-2 border-t border-zinc-100 dark:border-zinc-800">
+            <div
+              className={`pt-3 mt-2 border-t ${
+                darkMode
+                  ? 'border-zinc-800'
+                  : 'border-zinc-200'
+              }`}
+            >
               <a
                 href="#contact"
                 onClick={(e) => scrollTo(e, 'contact')}

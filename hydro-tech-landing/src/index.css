@@ -30,53 +30,131 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* ================================
+   GLOBAL
+================================ */
+
 html {
   scroll-behavior: smooth;
   background-color: #fafafa;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #18181b;
+  font-family: "Segoe UI Custom", system-ui, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ================================
+   DARK MODE GLOBAL
+================================ */
+
 .dark html {
   background-color: #09090b !important;
 }
 
-body {
-  background-color: #fafafa;
-  color: #18181b;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  min-height: 100vh;
-}
-
-/* --- DARK MODE GLOBAL FIX --- */
 .dark body {
   background-color: #09090b !important;
-  color: #f4f4f5 !important;
+  color: #ffffff !important;
 }
 
-/* Memastikan seluruh section, footer, dan header ikut gelap total */
+
+/* Section / Footer / Header */
+
 .dark section,
 .dark footer,
 .dark header,
 .dark nav {
   background-color: #09090b !important;
-  color: #f4f4f5 !important;
+  color: #ffffff;
 }
 
-/* Memperjelas semua teks dan paragraf redup agar sangat kontras dibaca */
-.dark p, 
-.dark span, 
-.dark li, 
+
+/* ================================
+   DARK MODE TEXT
+================================ */
+
+/* 
+   Teks paragraf, list, dan label
+   menjadi putih di dark mode.
+*/
+
+.dark p,
+.dark li,
 .dark label {
-  color: #d4d4d8 !important;
+  color: #ffffff;
 }
 
-.dark h1, 
-.dark h2, 
-.dark h3, 
-.dark h4 {
+
+/* Teks utama yang menggunakan
+   text-zinc-900 / 800 / 700
+   menjadi putih di dark mode.
+*/
+
+.dark .text-zinc-900,
+.dark .text-zinc-800,
+.dark .text-zinc-700 {
   color: #ffffff !important;
 }
 
-/* Memperbaiki badge/pill hijau muda agar kontras dan terbaca jelas */
+
+/* ================================
+   DARK MODE HEADING
+================================ */
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+  color: #ffffff;
+}
+
+
+/* ================================
+   GREEN TEXT
+   Tetap hijau di dark mode
+================================ */
+
+.dark .text-green-400 {
+  color: #4ade80 !important;
+}
+
+.dark .text-green-500 {
+  color: #22c55e !important;
+}
+
+.dark .text-green-600 {
+  color: #16a34a !important;
+}
+
+.dark .text-green-700 {
+  color: #15803d !important;
+}
+
+.dark .text-emerald-400 {
+  color: #34d399 !important;
+}
+
+.dark .text-emerald-500 {
+  color: #10b981 !important;
+}
+
+.dark .text-emerald-600 {
+  color: #059669 !important;
+}
+
+
+/* ================================
+   DARK MODE GREEN BADGE
+================================ */
+
 .dark .bg-green-100,
 .dark .bg-emerald-100 {
   background-color: #064e3b !important;
@@ -84,38 +162,50 @@ body {
   border-color: #047857 !important;
 }
 
-/* Memperbaiki kartu/card putih agar berubah gelap dengan sempurna */
+
+/* ================================
+   DARK MODE CARD
+================================ */
+
 .dark .bg-white,
 .dark .bg-zinc-50 {
   background-color: #18181b !important;
-  color: #ffffff !important;
+  color: #ffffff;
   border-color: #27272a !important;
 }
 
-.dark input, 
-.dark select, 
+
+/* ================================
+   DARK MODE INPUT
+================================ */
+
+.dark input,
+.dark select,
 .dark textarea {
   background-color: #27272a !important;
   color: #ffffff !important;
   border-color: #3f3f46 !important;
 }
 
-.dark input::placeholder {
+.dark input::placeholder,
+.dark textarea::placeholder {
   color: #a1a1aa !important;
 }
 
-/* Animasi Scroll yang Bersih (Tanpa kilatan putih) */
+
+/* ================================
+   REVEAL ANIMATION
+================================ */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-body {
-  font-family: "Segoe UI Custom", system-ui, sans-serif;
 }

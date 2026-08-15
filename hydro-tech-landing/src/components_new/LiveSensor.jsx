@@ -17,70 +17,161 @@ export default function LiveSensor({ darkMode }) {
         humidity: Math.floor(80 + Math.random() * 5)
       });
     }, 3000);
+
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className={`py-16 relative overflow-hidden transition-colors duration-300 ${darkMode ? 'bg-zinc-950 text-white border-t border-zinc-900' : 'bg-white text-zinc-900 border-t border-zinc-100'}`}>
+    <section
+      className={`py-16 relative overflow-hidden transition-colors duration-300 ${
+        darkMode
+          ? 'bg-zinc-950 text-white border-t border-zinc-900'
+          : 'bg-white text-zinc-900 border-t border-zinc-100'
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
+        {/* JUDUL */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-            </div>
-            <h3 className="text-2xl font-extrabold tracking-tight">Status Sensor Real-Time</h3>
+            <h3
+              className={`text-2xl font-extrabold tracking-tight ${
+                darkMode ? '!text-white' : '!text-zinc-900'
+              }`}
+            >
+              Status Sensor Real-Time
+            </h3>
           </div>
         </div>
 
-        {/* Grid Parameter Sensor */}
+        {/* GRID SENSOR */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          
-          <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-            <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Nutrisi (TDS)</p>
+
+          {/* NUTRISI */}
+          <div
+            className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
+              darkMode
+                ? 'bg-zinc-900 border-zinc-800'
+                : 'bg-white border-zinc-200'
+            }`}
+          >
+            <p
+              className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                darkMode ? '!text-white' : '!text-zinc-900'
+              }`}
+            >
+              Nutrisi (TDS)
+            </p>
+
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold font-mono text-green-600 dark:text-green-400">{sensorData.ppm}</span>
-              <span className="text-xs font-bold text-zinc-500">PPM</span>
+              <span className="text-3xl font-extrabold font-mono !text-green-500">
+                {sensorData.ppm}
+              </span>
+
+              <span className="text-xs font-bold !text-zinc-500 dark:!text-zinc-400">
+                PPM
+              </span>
             </div>
-            <div className="mt-3 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
+
+            <div className="mt-3 text-[11px] font-medium !text-emerald-600 dark:!text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
               Optimal (1000 - 1400)
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-            <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Keasaman Air (pH)</p>
+          {/* PH */}
+          <div
+            className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
+              darkMode
+                ? 'bg-zinc-900 border-zinc-800'
+                : 'bg-white border-zinc-200'
+            }`}
+          >
+            <p
+              className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                darkMode ? '!text-white' : '!text-zinc-900'
+              }`}
+            >
+              Keasaman Air (pH)
+            </p>
+
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold font-mono text-green-600 dark:text-green-400">{sensorData.ph}</span>
-              <span className="text-xs font-bold text-zinc-500">pH</span>
+              <span className="text-3xl font-extrabold font-mono !text-green-500">
+                {sensorData.ph}
+              </span>
+
+              <span className="text-xs font-bold !text-zinc-500 dark:!text-zinc-400">
+                pH
+              </span>
             </div>
-            <div className="mt-3 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
+
+            <div className="mt-3 text-[11px] font-medium !text-emerald-600 dark:!text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
               Normal (5.5 - 6.5)
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-            <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Suhu Lingkungan</p>
+          {/* SUHU */}
+          <div
+            className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
+              darkMode
+                ? 'bg-zinc-900 border-zinc-800'
+                : 'bg-white border-zinc-200'
+            }`}
+          >
+            <p
+              className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                darkMode ? '!text-white' : '!text-zinc-900'
+              }`}
+            >
+              Suhu Lingkungan
+            </p>
+
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold font-mono text-green-600 dark:text-green-400">{sensorData.temp}</span>
-              <span className="text-xs font-bold text-zinc-500">°C</span>
+              <span className="text-3xl font-extrabold font-mono !text-green-500">
+                {sensorData.temp}
+              </span>
+
+              <span className="text-xs font-bold !text-zinc-500 dark:!text-zinc-400">
+                °C
+              </span>
             </div>
-            <div className="mt-3 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
+
+            <div className="mt-3 text-[11px] font-medium !text-emerald-600 dark:!text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
               Kondisi Stabil
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-            <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Kelembaban Udara</p>
+          {/* KELEMBABAN */}
+          <div
+            className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
+              darkMode
+                ? 'bg-zinc-900 border-zinc-800'
+                : 'bg-white border-zinc-200'
+            }`}
+          >
+            <p
+              className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                darkMode ? '!text-white' : '!text-zinc-900'
+              }`}
+            >
+              Kelembaban Udara
+            </p>
+
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold font-mono text-green-600 dark:text-green-400">{sensorData.humidity}</span>
-              <span className="text-xs font-bold text-zinc-500">%</span>
+              <span className="text-3xl font-extrabold font-mono !text-green-500">
+                {sensorData.humidity}
+              </span>
+
+              <span className="text-xs font-bold !text-zinc-500 dark:!text-zinc-400">
+                %
+              </span>
             </div>
-            <div className="mt-3 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
+
+            <div className="mt-3 text-[11px] font-medium !text-emerald-600 dark:!text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded inline-block">
               Aerasi Bagus
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
   );
