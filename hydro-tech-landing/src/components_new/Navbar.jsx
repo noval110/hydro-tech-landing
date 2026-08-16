@@ -4,6 +4,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Navbar berubah saat discroll
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
 
@@ -16,6 +17,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     e.preventDefault();
     setIsOpen(false);
 
+    // Tutup menu sebelum pindah section
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
     });
@@ -42,7 +44,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
-          {/* LOGO */}
           <div
             className="flex items-center gap-3 cursor-pointer group"
             onClick={(e) => scrollTo(e, 'home')}
@@ -63,7 +64,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
               </svg>
             </div>
 
-            {/* LOGO TEXT */}
             <span className="font-extrabold text-xl tracking-tight">
               <span
                 style={{
@@ -83,7 +83,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
             </span>
           </div>
 
-          {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8">
 
             {navLinks.map((link) => (
@@ -100,10 +99,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
               </a>
             ))}
 
-            {/* DARK MODE */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-yellow-400 hover:scale-110 transition-all active:scale-95 shadow-sm cursor-pointer"
+              className={`p-2.5 rounded-xl ${
+                darkMode
+                  ? 'bg-zinc-800 text-yellow-400'
+                  : 'bg-zinc-100 text-zinc-700'
+              } hover:scale-110 transition-all active:scale-95 shadow-sm cursor-pointer`}
               title="Ganti Tema"
               type="button"
             >
@@ -138,7 +140,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
               )}
             </button>
 
-            {/* KONSULTASI */}
             <a
               href="#contact"
               onClick={(e) => scrollTo(e, 'contact')}
@@ -148,13 +149,16 @@ export default function Navbar({ darkMode, setDarkMode }) {
             </a>
           </div>
 
-          {/* MOBILE */}
           <div className="md:hidden flex items-center gap-2">
 
-            {/* DARK MODE MOBILE */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-yellow-400 cursor-pointer"
+              className={`p-2.5 rounded-xl ${
+                darkMode
+                  ? 'bg-zinc-800 text-yellow-400'
+                  : 'bg-zinc-100 text-zinc-700'
+              } cursor-pointer`}
+              title="Ganti Tema"
               type="button"
             >
               {darkMode ? (
@@ -182,16 +186,19 @@ export default function Navbar({ darkMode, setDarkMode }) {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646"
                   />
                 </svg>
               )}
             </button>
 
-            {/* HAMBURGER */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white cursor-pointer"
+              className={`p-2.5 rounded-xl ${
+                darkMode
+                  ? 'bg-zinc-800 text-white'
+                  : 'bg-zinc-100 text-zinc-900'
+              } cursor-pointer`}
               type="button"
             >
               <svg
@@ -221,10 +228,9 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full px-4 pt-2 pb-6 transition-all animate-fadeIn">
-          
+
           <div
             className={`rounded-3xl p-4 shadow-2xl space-y-2 border transition-colors duration-300 ${
               darkMode

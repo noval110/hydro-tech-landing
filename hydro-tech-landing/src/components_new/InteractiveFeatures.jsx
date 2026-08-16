@@ -63,7 +63,6 @@ export default function InteractiveFeatures({ darkMode }) {
     <section className={`py-24 border-t transition-colors duration-300 ${darkMode ? 'bg-zinc-950 border-zinc-900 text-white' : 'bg-white border-zinc-100 text-zinc-900'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         
-        {/* --- LIVE IoT SIMULATOR --- */}
         <div className="reveal">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight mt-3 mb-3">
@@ -146,7 +145,6 @@ export default function InteractiveFeatures({ darkMode }) {
         </div>
 
 
-        {/* --- PUSAT INFORMASI (FAQ) --- */}
         <div className="reveal">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl font-extrabold tracking-tight mt-3 mb-3">

@@ -16,10 +16,8 @@ export default function Hero({ darkMode }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT */}
           <div className="space-y-8 text-left">
 
-            {/* JUDUL */}
             <h1
               className="hero-title text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]"
               style={{
@@ -32,7 +30,6 @@ export default function Hero({ darkMode }) {
               </span>
             </h1>
 
-            {/* DESKRIPSI */}
             <p
               className="text-lg leading-relaxed max-w-lg font-medium"
               style={{
@@ -44,10 +41,8 @@ export default function Hero({ darkMode }) {
               ponsel Anda. Dirancang khusus untuk ruang terbatas.
             </p>
 
-            {/* BUTTON */}
             <div className="flex flex-wrap items-center gap-4">
 
-              {/* MULAI SIMULASI */}
               <button
                 onClick={() => scrollTo('simulasi')}
                 className="px-8 py-4 rounded-2xl font-bold bg-green-600 hover:bg-green-700 text-white shadow-lg shadow-green-600/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
@@ -55,7 +50,6 @@ export default function Hero({ darkMode }) {
                 Mulai Simulasi Panen
               </button>
 
-              {/* CARA KERJA */}
               <button
                 onClick={() => scrollTo('teknologi')}
                 className="px-8 py-4 rounded-2xl font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer"
@@ -72,7 +66,6 @@ export default function Hero({ darkMode }) {
 
             </div>
 
-            {/* STATUS SISTEM */}
             <div
               className="inline-flex flex-wrap items-center gap-6 p-4 rounded-2xl border shadow-sm transition-colors duration-300"
               style={{
@@ -81,7 +74,6 @@ export default function Hero({ darkMode }) {
               }}
             >
 
-              {/* STATUS */}
               <div className="flex items-center gap-3">
 
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
@@ -109,7 +101,6 @@ export default function Hero({ darkMode }) {
                 </div>
               </div>
 
-              {/* PEMISAH */}
               <div
                 className="hidden sm:block h-8 w-px"
                 style={{
@@ -117,10 +108,8 @@ export default function Hero({ darkMode }) {
                 }}
               ></div>
 
-              {/* DATA */}
               <div className="flex items-center gap-6 text-xs font-semibold">
 
-                {/* NUTRISI */}
                 <div>
                   <span
                     className="block font-normal text-[10px]"
@@ -148,7 +137,6 @@ export default function Hero({ darkMode }) {
                   </span>
                 </div>
 
-                {/* PH */}
                 <div>
                   <span
                     className="block font-normal text-[10px]"
@@ -181,7 +169,6 @@ export default function Hero({ darkMode }) {
 
           </div>
 
-          {/* RIGHT - IMAGE */}
           <div className="relative">
 
             <div className="absolute -inset-4 bg-gradient-to-tr from-green-500/40 to-emerald-400/40 rounded-3xl blur-2xl -z-10"></div>

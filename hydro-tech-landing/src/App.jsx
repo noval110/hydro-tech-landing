@@ -13,9 +13,6 @@ import Footer from './components_new/footer';
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  // ================================
-  // DARK MODE
-  // ================================
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -25,9 +22,6 @@ export default function App() {
   }, [darkMode]);
 
 
-  // ================================
-  // REVEAL ANIMATION
-  // ================================
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,8 +29,7 @@ export default function App() {
           if (entry.isIntersecting) {
             entry.target.classList.add('active');
 
-            // Setelah muncul, berhenti diamati.
-            // Jadi tidak akan hilang ketika scroll.
+            // Biar section tetap tampil
             observer.unobserve(entry.target);
           }
         });
@@ -67,14 +60,8 @@ export default function App() {
   }, []);
 
 
-  // ================================
-  // AGAR REVEAL TIDAK HILANG
-  // SAAT DARK/LIGHT MODE DIGANTI
-  // ================================
   useEffect(() => {
-    // React melakukan re-render saat darkMode berubah.
-    // Setelah render selesai, kembalikan class "active"
-    // ke semua bagian yang sudah pernah tampil.
+    // Simpan reveal saat ganti tema
 
     requestAnimationFrame(() => {
       const elements = document.querySelectorAll('.reveal');
@@ -82,8 +69,7 @@ export default function App() {
       elements.forEach((element) => {
         const rect = element.getBoundingClientRect();
 
-        // Jika bagian sedang terlihat di layar,
-        // pastikan tetap active.
+        // Jaga section yang terlihat
         if (
           rect.top < window.innerHeight &&
           rect.bottom > 0
@@ -92,9 +78,7 @@ export default function App() {
         }
       });
 
-      // Khusus konsultasi:
-      // kalau sebelumnya sudah pernah sampai bagian ini,
-      // jangan sampai hilang saat ganti mode.
+      // Jaga section kontak tetap tampil
       const contact = document.querySelector('#contact');
 
       if (contact) {
@@ -170,14 +154,12 @@ export default function App() {
       `}</style>
 
 
-      {/* NAVBAR */}
       <Navbar
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
 
 
-      {/* HERO */}
       <div
         id="hero-wrapper"
         className="reveal"
@@ -186,49 +168,41 @@ export default function App() {
       </div>
 
 
-      {/* FEATURES */}
       <div className="reveal">
         <Features darkMode={darkMode} />
       </div>
 
 
-      {/* HARVEST CALCULATOR */}
       <div className="reveal">
         <HarvestCalculator darkMode={darkMode} />
       </div>
 
 
-      {/* INTERACTIVE FEATURES */}
       <div className="reveal">
         <InteractiveFeatures darkMode={darkMode} />
       </div>
 
 
-      {/* TESTIMONIALS */}
       <div className="reveal">
         <Testimonials darkMode={darkMode} />
       </div>
 
 
-      {/* GALLERY */}
       <div className="reveal">
         <Gallery darkMode={darkMode} />
       </div>
 
 
-      {/* LIVE SENSOR */}
       <div className="reveal">
         <LiveSensor darkMode={darkMode} />
       </div>
 
 
-      {/* KONSULTASI */}
       <div className="reveal">
         <Contact darkMode={darkMode} />
       </div>
 
 
-      {/* FOOTER */}
       <Footer darkMode={darkMode} />
 
     </div>

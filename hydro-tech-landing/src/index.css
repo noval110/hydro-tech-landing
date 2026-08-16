@@ -31,10 +31,6 @@
 @tailwind utilities;
 
 
-/* ================================
-   GLOBAL
-================================ */
-
 html {
   scroll-behavior: smooth;
   background-color: #fafafa;
@@ -52,10 +48,6 @@ body {
 }
 
 
-/* ================================
-   DARK MODE GLOBAL
-================================ */
-
 .dark html {
   background-color: #09090b !important;
 }
@@ -66,8 +58,6 @@ body {
 }
 
 
-/* Section / Footer / Header */
-
 .dark section,
 .dark footer,
 .dark header,
@@ -77,26 +67,12 @@ body {
 }
 
 
-/* ================================
-   DARK MODE TEXT
-================================ */
-
-/* 
-   Teks paragraf, list, dan label
-   menjadi putih di dark mode.
-*/
-
 .dark p,
 .dark li,
 .dark label {
   color: #ffffff;
 }
 
-
-/* Teks utama yang menggunakan
-   text-zinc-900 / 800 / 700
-   menjadi putih di dark mode.
-*/
 
 .dark .text-zinc-900,
 .dark .text-zinc-800,
@@ -105,10 +81,6 @@ body {
 }
 
 
-/* ================================
-   DARK MODE HEADING
-================================ */
-
 .dark h1,
 .dark h2,
 .dark h3,
@@ -116,11 +88,6 @@ body {
   color: #ffffff;
 }
 
-
-/* ================================
-   GREEN TEXT
-   Tetap hijau di dark mode
-================================ */
 
 .dark .text-green-400 {
   color: #4ade80 !important;
@@ -151,10 +118,6 @@ body {
 }
 
 
-/* ================================
-   DARK MODE GREEN BADGE
-================================ */
-
 .dark .bg-green-100,
 .dark .bg-emerald-100 {
   background-color: #064e3b !important;
@@ -163,10 +126,6 @@ body {
 }
 
 
-/* ================================
-   DARK MODE CARD
-================================ */
-
 .dark .bg-white,
 .dark .bg-zinc-50 {
   background-color: #18181b !important;
@@ -174,10 +133,6 @@ body {
   border-color: #27272a !important;
 }
 
-
-/* ================================
-   DARK MODE INPUT
-================================ */
 
 .dark input,
 .dark select,
@@ -192,10 +147,6 @@ body {
   color: #a1a1aa !important;
 }
 
-
-/* ================================
-   REVEAL ANIMATION
-================================ */
 
 .reveal {
   opacity: 0;

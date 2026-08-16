@@ -54,12 +54,10 @@ export default function Gallery({ darkMode }) {
       }`}
     >
 
-      {/* GREEN GLOW BACKGROUND */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto mb-16">
 
           <h2
@@ -80,7 +78,6 @@ export default function Gallery({ darkMode }) {
             Berikut adalah dokumentasi asli hasil pemasangan sistem hidroponik cerdas di lokasi klien
           </p>
 
-          {/* FILTER TABS */}
           <div className="flex justify-center gap-2 mt-8">
 
             {['Semua', 'Vertical', 'Horizontal'].map((tab) => (
@@ -105,7 +102,6 @@ export default function Gallery({ darkMode }) {
         </div>
 
 
-        {/* PROJECT CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {filteredProjects.map((item) => (
@@ -137,7 +133,6 @@ export default function Gallery({ darkMode }) {
 
               <div>
 
-                {/* IMAGE */}
                 <div
                   className="w-full h-56 rounded-2xl overflow-hidden mb-6 relative"
                   style={{
@@ -156,7 +151,6 @@ export default function Gallery({ darkMode }) {
                 </div>
 
 
-                {/* LOCATION */}
                 <div className="flex justify-between items-center mb-2">
 
                   <span
@@ -171,7 +165,6 @@ export default function Gallery({ darkMode }) {
                 </div>
 
 
-                {/* TITLE */}
                 <h3
                   className="text-xl font-bold mb-2 group-hover:text-green-600 transition-colors"
                   style={{
@@ -187,7 +180,6 @@ export default function Gallery({ darkMode }) {
                 </h3>
 
 
-                {/* DESCRIPTION */}
                 <p
                   className="text-sm leading-relaxed mb-4"
                   style={{
@@ -200,7 +192,6 @@ export default function Gallery({ darkMode }) {
               </div>
 
 
-              {/* FOOTER CARD */}
               <div
                 className="pt-4 flex items-center justify-between text-xs font-bold"
                 style={{

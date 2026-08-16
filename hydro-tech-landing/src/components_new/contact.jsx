@@ -7,9 +7,6 @@ export default function Contact({ darkMode }) {
   const [showModal, setShowModal] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
 
-  // ================================
-  // KIRIM FORM
-  // ================================
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,9 +14,6 @@ export default function Contact({ darkMode }) {
     setShowModal(true);
   };
 
-  // ================================
-  // TUTUP POPUP SAJA
-  // ================================
   const closeModal = () => {
     setIsClosing(true);
 
@@ -29,9 +23,6 @@ export default function Contact({ darkMode }) {
     }, 350);
   };
 
-  // ================================
-  // KEMBALI KE BERANDA
-  // ================================
   const backToHome = () => {
     setIsClosing(true);
 
@@ -59,9 +50,6 @@ export default function Contact({ darkMode }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* ================================
-              KARTU PILIH MODUL
-          ================================= */}
           <div
             className={`space-y-8 p-8 rounded-3xl transition-colors duration-300 border ${
               darkMode
@@ -100,9 +88,6 @@ export default function Contact({ darkMode }) {
 
               <div className="space-y-3">
 
-                {/* ================================
-                    STARTER KIT
-                ================================= */}
                 <div
                   onClick={() =>
                     setSelectedPackage('Starter Kit (Vertical)')
@@ -158,9 +143,6 @@ export default function Contact({ darkMode }) {
                 </div>
 
 
-                {/* ================================
-                    PRO SYSTEM
-                ================================= */}
                 <div
                   onClick={() =>
                     setSelectedPackage('Pro System (Horizontal)')
@@ -219,9 +201,6 @@ export default function Contact({ darkMode }) {
           </div>
 
 
-          {/* ================================
-              FORM KONSULTASI
-          ================================= */}
           <div
             className={`rounded-3xl p-8 border transition-colors duration-300 ${
               darkMode
@@ -245,9 +224,6 @@ export default function Contact({ darkMode }) {
               onSubmit={handleSubmit}
             >
 
-              {/* ================================
-                  NAMA
-              ================================= */}
               <div>
                 <label
                   className={`block text-xs font-bold uppercase tracking-wide mb-2 ${
@@ -272,9 +248,6 @@ export default function Contact({ darkMode }) {
               </div>
 
 
-              {/* ================================
-                  EMAIL / WHATSAPP
-              ================================= */}
               <div>
                 <label
                   className={`block text-xs font-bold uppercase tracking-wide mb-2 ${
@@ -299,9 +272,6 @@ export default function Contact({ darkMode }) {
               </div>
 
 
-              {/* ================================
-                  TOMBOL KIRIM
-              ================================= */}
               <button
                 type="submit"
                 className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-green-600/25 hover:-translate-y-0.5 active:scale-95 cursor-pointer shadow-md"
@@ -326,16 +296,10 @@ export default function Contact({ darkMode }) {
       </div>
 
 
-      {/* ================================
-          POPUP / MODAL
-      ================================= */}
       {showModal &&
         createPortal(
           <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
 
-            {/* ================================
-                BACKDROP
-            ================================= */}
             <div
               className={`absolute inset-0 backdrop-blur-sm transition-opacity duration-300 ease-out ${
                 darkMode
@@ -349,9 +313,6 @@ export default function Contact({ darkMode }) {
               onClick={closeModal}
             />
 
-            {/* ================================
-                POPUP
-            ================================= */}
             <div
               className={`relative rounded-3xl p-8 max-w-md w-full flex flex-col items-center text-center transform transition-all duration-300 border shadow-2xl ${
                 darkMode
@@ -364,9 +325,6 @@ export default function Contact({ darkMode }) {
               }`}
             >
 
-              {/* ================================
-                  ICON
-              ================================= */}
               <div
                 className={`w-16 h-16 rounded-full flex items-center justify-center mb-5 shadow-inner ${
                   darkMode
@@ -390,9 +348,6 @@ export default function Contact({ darkMode }) {
               </div>
 
 
-              {/* ================================
-                  JUDUL POPUP
-              ================================= */}
               <h3
                 className={`text-2xl font-extrabold mb-2 ${
                   darkMode
@@ -404,9 +359,6 @@ export default function Contact({ darkMode }) {
               </h3>
 
 
-              {/* ================================
-                  ISI POPUP
-              ================================= */}
               <p
                 className={`mb-8 leading-relaxed ${
                   darkMode
@@ -422,9 +374,6 @@ export default function Contact({ darkMode }) {
               </p>
 
 
-              {/* ================================
-                  TOMBOL KEMBALI KE BERANDA
-              ================================= */}
               <button
                 type="button"
                 onClick={backToHome}

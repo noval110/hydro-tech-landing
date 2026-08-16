@@ -31,7 +31,6 @@ export default function LiveSensor({ darkMode }) {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* JUDUL */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <div>
             <h3
@@ -44,10 +43,8 @@ export default function LiveSensor({ darkMode }) {
           </div>
         </div>
 
-        {/* GRID SENSOR */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-          {/* NUTRISI */}
           <div
             className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
               darkMode
@@ -78,7 +75,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* PH */}
           <div
             className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
               darkMode
@@ -109,7 +105,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* SUHU */}
           <div
             className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
               darkMode
@@ -140,7 +135,6 @@ export default function LiveSensor({ darkMode }) {
             </div>
           </div>
 
-          {/* KELEMBABAN */}
           <div
             className={`p-6 rounded-2xl border shadow-sm transition-colors duration-300 ${
               darkMode

@@ -25,6 +25,7 @@ export default function Features({ darkMode }) {
     }
   ];
 
+  // Glow mengikuti mouse
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
